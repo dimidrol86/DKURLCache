@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/dimidrol86/DKURLCache.git", :tag => "v1.0.3" }
+  s.source       = { :git => "https://github.com/dimidrol86/DKURLCache.git", :tag => "v1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
