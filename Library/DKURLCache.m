@@ -7,6 +7,7 @@
 #define ETAG_KEY @"ETag"
 #define LAST_MODIFIED_KEY @"Last-Modified"
 #define IF_MODIFIED_SINCE_KEY @"If-Modified-Since"
+#define IF_NONE_MATCH @"If-None-Match"
 
 #define DATA_KEY @"data"
 
@@ -123,7 +124,7 @@
     DKURLCacheObject *obj=[self objectCacheForUrl:request.URL.absoluteString];
     
     if (obj.etag)
-        [request setValue:obj.etag forHTTPHeaderField:ETAG_KEY];
+        [request setValue:obj.etag forHTTPHeaderField:IF_NONE_MATCH];
 
     if (obj.lastModified)
         [request setValue:obj.lastModified forHTTPHeaderField:IF_MODIFIED_SINCE_KEY];
